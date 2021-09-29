@@ -6,4 +6,9 @@ const resolveApp = (relativePath) => path.resolve(appDirectory, relativePath);
 
 module.exports = {
   resolveApp,
+  appPublic: resolveApp("public"),
+  appHtml: resolveApp("public/index.ejs"),
+  appSrc: resolveApp("src"),
+  appDist: resolveApp("dist"),
+  appTsConfig: resolveApp("tsconfig.json"),
 };

@@ -7,3 +7,20 @@
 [学习 Webpack5 之路（优化篇）](https://jelly.jd.com/article/61179aa26bea510187770aa3)
 
 感谢 [饺子+1](https://github.com/jiaozitang) 写的文章, 使我受益匪浅
+
+
+## 安装使用
+```
+# 安装依赖
+pnpm install
+
+# 启动项目
+pnpm dev
+
+# 打包代码
+pnpm build
+
+# 预览
+pnpm serve
+```
+

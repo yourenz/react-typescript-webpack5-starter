@@ -143,6 +143,11 @@ module.exports = {
       React: "react",
     }),
   ],
+  // 从输出的 bundle 中排除依赖
+  externals: {
+    react: "React",
+    "react-dom": "ReactDOM",
+  },
   // 使用文件缓存
   cache: {
     type: "filesystem",

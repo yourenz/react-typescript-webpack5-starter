@@ -7,6 +7,26 @@
     <title><%= htmlWebpackPlugin.options.title %></title>
   </head>
   <body>
-      <div id="root"></div>
+    <div id="root"></div>
+    <!-- Dependencies -->
+    <% if (webpackConfig.mode == 'production') { %>
+    <script
+      crossorigin
+      src="https://unpkg.com/react@17/umd/react.production.min.js"
+    ></script>
+    <script
+      crossorigin
+      src="https://unpkg.com/react-dom@17/umd/react-dom.production.min.js"
+    ></script>
+    <% } else { %>
+    <script
+      crossorigin
+      src="https://unpkg.com/react@17/umd/react.development.js"
+    ></script>
+    <script
+      crossorigin
+      src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"
+    ></script>
+    <% } %>
   </body>
 </html>
